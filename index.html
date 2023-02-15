@@ -58,14 +58,15 @@
       <section class="hero">
         <div class="container solutions">
           <h1 class="hero-h">Effective Solutions for Your Business</h1>
-          <button class="hero-button" type="button"data-modal-open>Order Service</button>
+          <button class="hero-button" type="button"
+           data-modal-open>Order Service</button>
         </div>
       </section>
       <!-- section2 -->
 
       <section class="section">
         <div class="container">
-          <h2 visually-hidden class="visually-hidden">our possibilities</h2>
+          <h2 visually-hidden class="">our possibilities</h2>
 
           <ul class="header-list list">
             <li class="title icon-delivery">
@@ -169,7 +170,7 @@
                     ></a>
                   </li>
                 </ul>
-
+                </div>
             <li class="team">
               <img
                 src="./images/tom1.jpg"
@@ -214,9 +215,11 @@
                         ></use></svg
                     ></a>
                   </li>
-                </ul>
-
-            <li class="team">
+                  </ul>
+                  </div>
+                  
+               <li class="team">
+                
               <img
                 src="./images/camila1.jpg"
                 alt="Marketing"
@@ -261,7 +264,7 @@
                     ></a>
                   </li>
                 </ul>
-                
+                </div>
             <li class="team">
               <img class="imagis-portfolio"
                 src="./images/portfolio/daniel1.jpg"
@@ -272,11 +275,10 @@
               <div class="tit-par">
                 <h3 class="title-p">Daniel Wilson</h3>
                 <p class="paragraf">UI Designer</p>
-
-                <ul class="soc-list list">
+                  <ul class="soc-list list">
 
                   <li class="soc-list-item">
-                   <a href=""class="soc-link">                                                                                                                             
+                   <a href="" class="soc-link">                                                                                                                             
 
                          <svg class="soc-icon" width="20" height="20">
                         <use
@@ -308,16 +310,12 @@
                            href="./images/icons.svg/sprait.svg#icon-linkedin" 
                         ></use></svg
                     ></a>
-                  </li>
-                </ul>
-                
-                  </ul>
+                   </li>
+                 </ul>
                 </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
+              </li>
+            </div>
+          </section>
       <section class="section-customers">
         <div class="container">
           <h2 class="customers">Customers</h2>
@@ -386,7 +384,7 @@
         <b class="foot-tit">Social media</b>
         <ul class="soc-list list">
            <li class="soc-list-footer">
-                   <a href=""class="soc-link-footer">                                                                                                                             
+                   <a href="" class="soc-link-footer">                                                                                                                             
                      <svg class="soc-icon-footer" width="24" height="24">
                         <use
                           href="./images/icons.svg/sprait.svg#icon-instagram-21"
@@ -420,10 +418,10 @@
                   </li>
                 </ul>
                </div>
-    </footer>
-    <div class="backdrop is-hidden" data-modal>
+         </footer>
+     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button"class="modal-close-btn"data-modal-close>
+        <button type="button"class="modal-close-btn" data-modal-close>
           <svg class="icon-modal">
             <use href="./images/icons.svg/sprait.svg#icon-close"
             width="8"
@@ -442,7 +440,7 @@
    
 <input type="text" 
 name="user-name" 
-class="modal-form-input"required pattern="^[a-zA-Zа-яА-я]+$"
+class="modal-form-input" required pattern="^[a-zA-Zа-яА-я]+$"
 minlength="2"/>
  
 </label>
@@ -452,7 +450,8 @@ minlength="2"/>
  Phone
     </span>
    
-<input type="tel" name="user-phone" class="modal-form-input"required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+<input type="tel" name="user-phone" class="modal-form-input"
+required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
 title="xxx-xxx-xx-xx"/></label>
 
 <label class="form-field">
@@ -460,26 +459,29 @@ title="xxx-xxx-xx-xx"/></label>
  Email
     </span>
    
-<input type="e-mail" name="user-mail" class="modal-form-input"required pattern="^[]"/></label>
+<input type="e_mail" name="user-mail" class="modal-form-input"
+required pattern="^[]"/></label>
 
 <label class="form-field">
+
     <span class="modal-form-input-desk">
  Comment
     </span>
-
+<!-- <input type="text"class="modal-form-input"/> -->
     <textarea 
     class="input-text"
  name="user-message"
  placeholder="Input text"></textarea>
    
-<input type="text"class="modal-form-input"/>
+
  </label>
 
  <input id="user-policy" type="checkbox" name="user_policy"  class="modal-form-check">
  <label class="form-privacy">
 <input class="checkbox visually-hidden"
 name="privacy"/>
- <p class="accept-policy-text"> I accept the terms and conditions of the<a class="privacy-link"href="#">Privacy Policy</a></p>
+ <p class="accept-policy-text"> I accept the terms and conditions of the<a class="privacy-link"
+  href="#">Privacy Policy</a></p>
  </label>
  <button type="submit" class="modal-form-submint">
   Send
