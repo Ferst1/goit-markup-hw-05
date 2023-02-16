@@ -8,6 +8,7 @@
     --second-color: #e7e9fc;
     --green-hover-color: #31D0AA;
     --hover-focus-color: #404bbf;
+    --time: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .body {
@@ -617,7 +618,7 @@ button {
 .icon-cust {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
-    border-color: ;
+    transition: border-color(var(--time));
 
 }
 
@@ -649,7 +650,7 @@ button {
     height: 100%;
     border: 1px solid #8e8f99;
     border-radius: 4px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
 
 
@@ -665,7 +666,6 @@ button {
 .link-cust:hover .icon,
 .link-cust:focus .icon {
     fill: var(--hover-focus-color);
-    transition: background-color cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-cust {
@@ -679,12 +679,12 @@ button {
 .soc-link:hover,
 .soc-link:focus {
     background-color: var(--hover-focus-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .soc-icon-footer {
 
     display: flex;
+    transition: background-color var(--time);
 
 }
 
@@ -697,7 +697,7 @@ button {
     width: 40px;
     height: 40px;
     background-color: #434455;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color var(--time);
     transition-duration: 250ms;
 }
 
@@ -706,8 +706,6 @@ button {
 .soc-link-footer:hover,
 .soc-link-footer:focus {
     background: var(--green-hover-color);
-    transition: color cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .foot-tit {
@@ -722,6 +720,7 @@ button {
     line-height: 24px;
     letter-spacing: 0.02em;
     transition-duration: 250ms;
+    transition: color var(--time), background-color var(--time);
 
 }
 
@@ -970,7 +969,7 @@ button {
     padding-top: 40px;
     overflow: auto;
     transform: translate(0, 100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform var(--time);
 
 
 }
